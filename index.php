@@ -1,7 +1,10 @@
 <?php
 
-$testo = 'Non ci saranno sventolii di bacchette o stupidi incantesimi in questo corso! Come tale, non mi aspetto che molti di voi apprezzino la sottile scienza e l’esatta arte del preparare pozioni, comunque ai pochi, scelti dal fato, che possiedono la predisposizione… io posso insegnare come stregare la mente e irretire i sensi… Posso dire come imbottigliare la fama, approntare la gloria e finanche mettere un fermo alla morte. Tuttavia, magari alcuni di voi sono venuti a Hogwarts in possesso di abilità così formidabili da sentirsi completi abbastanza… da non prestare attenzione!
-(Professor Piton)';
+$testo = 'Non ci saranno sventolii di bacchette o stupidi incantesimi in questo corso! Come tale, non mi aspetto che molti di voi apprezzino la sottile scienza e 
+          l’esatta arte del preparare pozioni, comunque ai pochi, scelti dal fato, che possiedono la predisposizione… io posso insegnare come stregare la mente e 
+          irretire i sensi… Posso dire come imbottigliare la fama, approntare la gloria e finanche mettere un fermo alla morte. Tuttavia, magari alcuni di voi sono 
+          venuti a Hogwarts in possesso di abilità così formidabili da sentirsi completi abbastanza… da non prestare attenzione!
+          (Professor Piton)';
 
 $censura = $_GET['censura'];
 
@@ -19,6 +22,7 @@ $censura = $_GET['censura'];
 <body>
     
     <h5 class="text-center p-3"> <em><?php echo $testo ?></em> </h5>
+    <p class="text-center">Il testo è lungo <?php echo strlen($testo) ?> caratteri </p>
     <form action="" method="GET" class="my-5 text-center">
         <label for="censura" class="d-block pb-2">Inserisci la parola da censurare</label>
         <input type="text" name="censura">
